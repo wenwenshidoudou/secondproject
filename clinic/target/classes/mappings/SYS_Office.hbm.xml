@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bsoft.mvc.bean.SysOffice" entity-name="SYS_Office" table="SYS_Office">
+        <id name="id" type="java.lang.Long" length="50">
+            <generator class="sequence">
+                <param name="sequence">SEQ_SYS_Office</param>
+            </generator>
+        </id>
+        <property name="officeCode" type="java.lang.String" length="20"/>
+        <property name="officeName" type="java.lang.String" length="50"/>
+        <property name="address" type="java.lang.String" length="250"/>
+        <property name="parentID" type="java.lang.String" length="20"/>
+        <property name="organizeType" type="java.lang.String" length="20"/>
+        <property name="telphone" type="java.lang.String" length="20"/>
+        <property name="email" type="java.lang.String" length="50"/>
+        <property name="plsx" type="java.lang.String" length="10"/>
+        <property name="pyCode" type="java.lang.String" length="20"/>
+        <property name="logOff" type="java.lang.String" length="1"/>
+    </class>
+</hibernate-mapping>

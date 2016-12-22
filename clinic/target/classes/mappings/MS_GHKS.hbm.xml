@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bsoft.mvc.bean.MsGhks" table="MS_GHKS">
+        <id name="ksdm" type="java.lang.Long" length="50">
+            <generator class="increment"/>
+        </id>
+        <property name="ksmc" type="java.lang.String" ></property>
+        <property name="pydm" type="java.lang.String" ></property>
+         <property name="ghf" type="java.lang.Double"></property>
+          <property name="zlf" type="java.lang.Double"></property>
+           <property name="zjmz" type="java.lang.Integer"></property>
+            <property name="mzks" type="java.lang.Integer"></property>
+             <property name="ddxx" type="java.lang.String"></property>
+    </class>
+</hibernate-mapping>
